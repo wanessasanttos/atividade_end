@@ -10,11 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-     <!-- ICONE DA ABA -->
 </head>
 
-<body> <!-- CABEÇALHO -->
-    <header> <!-- MENU-->
+<body>
+    <header>
         <div class="menu">
             <ul class="topicos">
                 <li><a href="index.html">INÍCIO</a></li>
@@ -25,20 +24,114 @@
     </header>
 
     <main>
-        <!--CAIXA DE BUSCA P/ INSERIR NOME COM LOGO-->
         <div class="container">
-                <div class="busca">
-                    <input class="search-txt" type="text" name="" placeholder="Insira seu Nome:">
-                    <img src="busca.png" class="search-btn">
-                </div>
+            <div class="busca">
+                <input id="Nome" class="search-txt" type="text" placeholder="Insira seu Nome:">
+                <button type="button" id="button" onclick="Nome()"><img src="busca.png" class="search-btn"></button>
+            </div>
         </div>
+
+        <div class="select" id="curso-nav">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Curso</a>
+                        <div class="dropdown_menu">
+                            <a href="#" onclick="selecionarCurso('sistemas')">Sistemas de Informação</a>
+                            <a href="#" onclick="selecionarCurso('ciencia')">Ciência da Computação</a>
+                            <a href="#" onclick="selecionarCurso('engenharia')">Engenharia da Computação</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="sistemas" class="curso" style="display: none;">
+            <p>Você cursa Sistemas de Informação.</p>
+        </div>
+
+        <div id="ciencia" class="curso" style="display: none;">
+            <p>Você cursa Ciência da Computação.</p>
+        </div>
+
+        <div id="engenharia" class="curso" style="display: none;">
+            <p>Você cursa Engenharia da Computação.</p>
+        </div>
+
+        <div class="select" id="periodo-nav">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Período</a>
+                        <div class="dropdown_menu_two">
+                            <a href="#" onclick="selecionarPeriodo('primeiro')">Primeiro Período</a>
+                            <a href="#" onclick="selecionarPeriodo('segundo')">Segundo Período</a>
+                            <a href="#" onclick="selecionarPeriodo('terceiro')">Terceiro Período</a>
+                            <a href="#" onclick="selecionarPeriodo('quarto')">Quarto Período</a>
+                            <a href="#" onclick="selecionarPeriodo('quinto')">Quinto Período</a>
+                            <a href="#" onclick="selecionarPeriodo('sexto')">Sexto Período</a>
+                            <a href="#" onclick="selecionarPeriodo('setimo')">Sétimo Período</a>
+                            <a href="#" onclick="selecionarPeriodo('oitavo')">Oitavo Período</a>
+                            <a href="#" onclick="selecionarPeriodo('nono')">Nono Período</a>
+                            <a href="#" onclick="selecionarPeriodo('decimo')">Décimo Período</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="primeiro" class="periodo" style="display: none;">
+            <p>Primeiro Período</p>
+        </div>
+
+        <div id="segundo" class="periodo" style="display: none;">
+            <p>Segundo Período</p>
+        </div>
+
+        <div id="terceiro" class="periodo" style="display: none;">
+            <p>Terceiro Período</p>
+        </div>
+
+        <div id="quarto" class="periodo" style="display: none;">
+            <p>Quarto Período</p>
+        </div>
+
+        <div id="quinto" class="periodo" style="display: none;">
+            <p>Quinto Período</p>
+        </div>
+
+        <div id="sexto" class="periodo" style="display: none;">
+            <p>Sexto Período</p>
+        </div>
+
+        <div id="setimo" class="periodo" style="display: none;">
+            <p>Sétimo Período</p>
+        </div>
+
+        <div id="oitavo" class="periodo" style="display: none;">
+            <p>Oitavo Período</p>
+        </div>
+
+        <div id="nono" class="periodo" style="display: none;">
+            <p>Nono Período</p>
+        </div>
+
+        <div id="decimo" class="periodo" style="display: none;">
+            <p>Décimo Período</p>
+        </div>
+
     </main>
 
+    <span id="output"></span>
 
-    <footer>    
+    <script src="testepf2.js"></script>
+
+    <footer>
         <div class="rodape">
-            <p class="texto-rodape">© 2024 DCOMP- Departamento de Computação da UFS</p>
+            <p class="texto-rodape">© 2024 DCOMP - Departamento de Computação da UFS</p>
         </div>
     </footer>
+
+</body>
 
 </html>
