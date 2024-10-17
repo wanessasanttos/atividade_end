@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <main>
+<main>
         <div class="container">
             <div class="busca">
                 <input id="Nome" class="search-txt" type="text" placeholder="Insira seu Nome:">
@@ -31,20 +31,20 @@
             </div>
         </div>
 
-        <div class="select" id="curso-nav">
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Curso</a>
-                        <div class="dropdown_menu">
-                            <a href="#" onclick="selecionarCurso('sistemas')">Sistemas de Informação</a>
-                            <a href="#" onclick="selecionarCurso('ciencia')">Ciência da Computação</a>
-                            <a href="#" onclick="selecionarCurso('engenharia')">Engenharia da Computação</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <div class="select" id="curso-nav">
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">Curso</a>
+                                <div class="dropdown_menu">
+                                    <a href="#" onclick="selecionarCurso('sistemas')">Sistemas de Informação</a>
+                                    <a href="#" onclick="selecionarCurso('ciencia')">Ciência da Computação</a>
+                                    <a href="#" onclick="selecionarCurso('engenharia')">Engenharia da Computação</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
         <div id="sistemas" class="curso" style="display: none;">
             <p>Você cursa Sistemas de Informação.</p>
@@ -58,10 +58,10 @@
             <p>Você cursa Engenharia da Computação.</p>
         </div>
 
-        <div class="select" id="periodo-nav">
+        <div class="select_two" id="periodo-nav">
             <nav>
                 <ul>
-                    <li class="dropdown">
+                    <li class="dropdown_two">
                         <a href="#">Período</a>
                         <div class="dropdown_menu_two">
                             <a href="#" onclick="selecionarPeriodo('primeiro')">Primeiro Período</a>
@@ -120,7 +120,7 @@
             <p>Décimo Período</p>
         </div>
 
-    </main>
+</main>
 
     <span id="output"></span>
 
