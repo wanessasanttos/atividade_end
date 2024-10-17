@@ -25,17 +25,28 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.select {
+.select{
     box-sizing: border-box;
     margin: 0;
     padding-inline: 0;
     background-color: #1e3a8a;
     color: whitesmoke;
+    border-radius: 10px;
+    margin-top:2em;
+}
+.select_two {
+    box-sizing: border-box;
+    margin: 0;
+    padding-inline: 0;
+    background-color: #1e3a8a;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 1.5em;
 }
 
 nav {
     background-color: #0909e2;
-    width: 7em;
+    width: 8em;
     border-radius: 10px ;
 }
 
@@ -44,7 +55,7 @@ nav li {
 }
 
 nav li a {
-    border-radius: 10px;
+    border-radius: 5px;
     display: inline-block;
     color: whitesmoke;
     padding: 5px;
@@ -57,21 +68,34 @@ nav li a:hover {
 .dropdown_menu {
     position: absolute;
     box-sizing: 0 0 2px black;
+    background-color: #0909e2;
     display: none;
+    border-radius: 10px;
 }
 .dropdown_menu_two {
     position: absolute;
     box-sizing: 0 0 2px black;
+    background-color: #0909e2;
     display: none;
+    border-radius: 10px;
 }
 
 .dropdown_menu a {
     display: block;
-    color: #1d4ed8;
+    background-color: #0909e2;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+.dropdown_menu_two a {
+    display: block;
     padding: 5px;
     transition: background-color 0.3s ease;
 }
 .dropdown:hover .dropdown_menu{
+    display: block;
+}
+
+.dropdown_two:hover .dropdown_menu_two {
     display: block;
 }
 
@@ -133,8 +157,8 @@ a {
         flex-direction: row;
         justify-content: space-between;
         margin-right: 2em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 2em;
+        margin-bottom: 0em;
     }
     
     .busca {
@@ -183,8 +207,7 @@ a {
     }
     .rodape {
         width: 18.9em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        margin-top: 14em;
         padding: 0.4em 0.3em;
         background-color: #0909e2;
         border-radius: 5px;
@@ -300,8 +323,7 @@ a {
 
     .rodape {
         width: 90%;
-        margin-top: 0.5em;
-        margin-bottom: 1em;
+        margin-top: 12em;
         padding: 0.6em 0.3em;
         border-radius: 10px;
     }
@@ -312,6 +334,9 @@ a {
 }
 
 @media (min-width: 1024px) {
+    nav{
+        width: 10em;
+    }
     .menu {
         display: flex;
         position: relative;
@@ -359,12 +384,20 @@ a {
         width: 2.8em;
         height: 3.35em;
    }
+   nav {
+       width: 10em;
+   }
+   .select {
+       margin-top: 3em;
+   }
 
-    .topicos {
-        gap: 1.5em;
-    }
+   .select_two {
+       margin-top: 2.5em;
+   }
+
     .rodape {
         width: 95%;
+        margin-top: 23em;
     }
 }
  
@@ -401,8 +434,22 @@ a {
     .logo {
         width: 8.4em;
     }
+    nav li a {
+        font-size: 1.5em;
+    }
+    nav {
+        width: 15em;
+    }
+    .dropdown_menu {
+        width:15em;
+    }
+    .dropdown_menu_two {
+       width:15em;
+    }
+    
     .rodape {
         padding: 0.7em 0;
+        margin-top: 30em;
     }
 
     .texto-rodape {
@@ -449,9 +496,26 @@ a {
     a {
         font-size: 1.8em;
     }
+    nav li a {
+        font-size: 2em;
+    }
+
+    nav {
+        width: 25em;
+        border-radius: 15px;
+    }
+
+    .dropdown_menu {
+        width: 25em;
+    }
+
+    .dropdown_menu_two {
+        width: 25em;
+    }
 
     .rodape {
         padding: 1em 0;
+        margin-top: 65em;
     }
 
     .texto-rodape {
