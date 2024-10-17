@@ -25,28 +25,16 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.select{
-    box-sizing: border-box;
+select {
+   width: 12em;
     margin: 0;
     padding-inline: 0;
     background-color: #1e3a8a;
     color: whitesmoke;
-    border-radius: 10px;
-    margin-top:2em;
 }
-.select_two {
-    box-sizing: border-box;
-    margin: 0;
-    padding-inline: 0;
-    background-color: #1e3a8a;
-    color: whitesmoke;
-    border-radius: 10px;
-    margin-top: 1.5em;
-}
-
 nav {
     background-color: #0909e2;
-    width: 8em;
+    width: 7em;
     border-radius: 10px ;
 }
 
@@ -55,7 +43,7 @@ nav li {
 }
 
 nav li a {
-    border-radius: 5px;
+    border-radius: 10px;
     display: inline-block;
     color: whitesmoke;
     padding: 5px;
@@ -65,39 +53,6 @@ nav li a:hover {
     color:black ;
 }
 
-.dropdown_menu {
-    position: absolute;
-    box-sizing: 0 0 2px black;
-    background-color: #0909e2;
-    display: none;
-    border-radius: 10px;
-}
-.dropdown_menu_two {
-    position: absolute;
-    box-sizing: 0 0 2px black;
-    background-color: #0909e2;
-    display: none;
-    border-radius: 10px;
-}
-
-.dropdown_menu a {
-    display: block;
-    background-color: #0909e2;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-}
-.dropdown_menu_two a {
-    display: block;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-}
-.dropdown:hover .dropdown_menu{
-    display: block;
-}
-
-.dropdown_two:hover .dropdown_menu_two {
-    display: block;
-}
 
 footer {
     width: 100%;
@@ -151,63 +106,43 @@ a {
         padding: 0.4em 0.4em 0.4em;
         letter-spacing: 1px;
     }
+
     .container{
         width:10em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-right: 2em;
-        margin-top: 2em;
-        margin-bottom: 0em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     
-    .busca {
-        width: 100%;
-        height: 2em;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .busca>input {
-        width: 100%;
-        padding: 5px;
-        background-color:#2b82f6;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px;
-    }
-    .search-txt {
-        color:aliceblue;
-        background-color: #1e3a8a;
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        font-size: 0.7em;
-        line-height: 0, 5em;
-        width: 0.2em;
-        display: flex;
-    }
-    .search-btn{
-        width: 2.3em;
-        height: 2.1em;
-        background-color:#1d4ed8;
-        
-        
-    }
-    .button{
-        width:2.3em;
-        height: 2.2em;
-
-    }
     .logo {
         justify-items: center;
         width:50%;
         margin-bottom: 0.2em;
         border-radius: 10px;
     }
+    h1{
+        margin-top: 1.5em;
+        font-size: 1em;
+    }
+    p{
+        font-size: 1em;
+    }
+    .curso{
+        width: 1em;
+        background-color: #0909e2;
+    }
+    .mostrar_disc{
+        margin-bottom: 3em;
+    }
+    .resultado{
+        align-items: center;
+        margin-bottom: 2em;
+    }
     .rodape {
         width: 18.9em;
-        margin-top: 14em;
         padding: 0.4em 0.3em;
         background-color: #0909e2;
         border-radius: 5px;
@@ -232,16 +167,7 @@ a {
         margin-left: 0.5em;
         padding: 5px;
     }
-    .search-btn {
-         width: 2.4em;
-         height: 2.12em;
-    }
-    
-    .button {
-        width: 2.4em;
-        height: 2em;
 
-         }
     .rodape {
         width: 21.9em;
     }
@@ -258,14 +184,6 @@ a {
 
     a {
         padding: 0.4em 0em 0.4em 1.2em;
-    }
-    .search-btn {
-        width: 2.5em;
-        height: 2.10em;
-    }    
-    .button {
-        width: 2.5em;
-        height: 2em;   
     }
     .rodape {
         width: 24.9em;
@@ -303,29 +221,11 @@ a {
         width: 15em;
         margin-right: 2em;
     }    
-    .busca {
-        width: 100%;
-        height: 2.5em;
-    }          
-    .search-txt {
-        font-size: 0.9em;
-        line-height: 0, 7em;
-        width: 0.2em;
-    }
-    .button {
-        width: 2.5em;
-        height: 2.5em;
-    }
-    .search-btn {
-        width: 2.5em;
-        height: 2.75em;
-    }
 
     .rodape {
         width: 90%;
-        margin-top: 12em;
+        margin-top: 5em;
         padding: 0.6em 0.3em;
-        border-radius: 10px;
     }
 
     .texto-rodape {
@@ -334,26 +234,12 @@ a {
 }
 
 @media (min-width: 1024px) {
-    nav{
-        width: 10em;
-    }
     .menu {
         display: flex;
         position: relative;
         margin-top: 0.8em;
         margin-left: 1em;
         width: 93%;
-    }
-
-    .topicos {
-        display: flex;
-        flex-direction: row;
-        width: 600px;
-        gap: 10px;
-    }
-
-    .topicos a {
-        padding: 0.5em 0.7em;
     }
 
     .logo {
@@ -365,36 +251,6 @@ a {
         width: 17em;
         margin-right: 2em;
     }
-
-    .busca {
-        width: 100%;
-        height: 3em;
-    }
-
-    .search-txt {
-        font-size: 1.1em;
-        line-height: 0, 8em;
-        width: 0.2em;
-    }
-    .button {
-        width: 2.8em;
-        height: 3.3em;
-    }
-    .search-btn {
-        width: 2.8em;
-        height: 3.35em;
-   }
-   nav {
-       width: 10em;
-   }
-   .select {
-       margin-top: 3em;
-   }
-
-   .select_two {
-       margin-top: 2.5em;
-   }
-
     .rodape {
         width: 95%;
         margin-top: 23em;
@@ -414,42 +270,11 @@ a {
         width: 20em;
         margin-right: 2.5em;
     }
-    .busca {
-        width: 100%;
-        height: 3.3em;
-    }
-    .search-txt {
-        font-size: 1.3em;
-        width: 0.2em;
-    }
-    .button {
-        width: 2.8em;
-        height: 3.3em;
-    }
-    
-    .search-btn {
-        width: 2.8em;
-        height: 3.80em;
-    }
     .logo {
         width: 8.4em;
     }
-    nav li a {
-        font-size: 1.5em;
-    }
-    nav {
-        width: 15em;
-    }
-    .dropdown_menu {
-        width:15em;
-    }
-    .dropdown_menu_two {
-       width:15em;
-    }
-    
     .rodape {
         padding: 0.7em 0;
-        margin-top: 30em;
     }
 
     .texto-rodape {
@@ -465,25 +290,6 @@ a {
     .container {
         width: 40em;
         }
-    .busca {
-        height: 7em;
-    }
-    
-    .search-txt {
-        font-size: 2.5em;
-        width: 0.2em;
-    }
-    
-    .search-btn {
-        width: 5em;
-        height: 8.2em;
-        border-top-right-radius: 9px;
-        border-bottom-right-radius: 9px;
-    }
-    .button {
-        width: 5em;
-        height: 7em;
-    }
     
     .logo {
         width: 8.4em;
@@ -496,26 +302,9 @@ a {
     a {
         font-size: 1.8em;
     }
-    nav li a {
-        font-size: 2em;
-    }
-
-    nav {
-        width: 25em;
-        border-radius: 15px;
-    }
-
-    .dropdown_menu {
-        width: 25em;
-    }
-
-    .dropdown_menu_two {
-        width: 25em;
-    }
 
     .rodape {
         padding: 1em 0;
-        margin-top: 65em;
     }
 
     .texto-rodape {
