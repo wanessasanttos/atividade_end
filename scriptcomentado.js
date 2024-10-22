@@ -106,6 +106,15 @@ document.getElementById('agendamento-form').addEventListener('submit', (event) =
         alert('Por favor, preencha todos os campos!')
         return
     }
+    
+    const dataAgendamento = new Date(data.split('/').reverse().join('-')) // Formato dd/mm/yyyy para yyyy-mm-dd
+    const dataAtual = new Date()
+
+    if (dataAgendamento < dataAtual) {
+        alert('A data selecionada já passou. Por favor, escolha uma data futura.')
+        return
+    }
+
 
 
     //Define os agendamentos salvos no navegador atraves da aplicação da função recuperarAgendamento
